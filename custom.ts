@@ -10,7 +10,7 @@
  * Custom blocks
  */
 //% weight=75 color=#48A860 icon=""
-//%block="Moiving"
+//%block="Moving"
 namespace moving {
     /**
      * TODO: describe your function here
