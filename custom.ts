@@ -51,6 +51,22 @@ namespace moving {
             mySprite.vy = n
             pause(t)
         })
-
+    }
+    /**
+  * TODO: describe your function here
+  * @param n describe parameter here, eg: 5
+  * @param s describe parameter here, eg: "Hello"
+  * @param e describe parameter here
+  */
+    //% mySprite.shadow=variables_get
+    //% mySprite.defl=mySprite
+    //% block="Stop Moving $mySprite"
+    //% t.shadow=timePicker
+    //%group="Stop Moving"
+    export function movestop(mySprite: Sprite): void {
+        forever(function () {
+            mySprite.vy = 0
+            mySprite.vx = 0
+        })
     }
 }
