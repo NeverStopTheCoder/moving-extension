@@ -1,18 +1,1 @@
-<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="uF=R/2YcZ1Md=bNiI{ib">mySprite</variable><variable type="KIND_SpriteKind" id="_bqq6/Ol0y%!t4w%ub=`">Player</variable><variable type="KIND_SpriteKind" id="/V4xK~{7(FAka2cBfxb0">Projectile</variable><variable type="KIND_SpriteKind" id=",Lt%~+,lQCcVae;$~HIX">Food</variable><variable type="KIND_SpriteKind" id="G12i=Q-/C)cmpcr:_elJ">Enemy</variable></variables><block type="pxt-on-start" id="$#e7^VaFq*b?(V9Br1HJ" x="37" y="54"><statement name="HANDLER"><block type="variables_set" id="9a9_c!nce?04vg8k){Pf"><field name="VAR" id="uF=R/2YcZ1Md=bNiI{ib">mySprite</field><value name="VALUE"><shadow type="math_number" id="dP~:?z{x3d+`SHlrhC~T"><field name="NUM">0</field></shadow><block type="spritescreate" id="jQ|}8M3Y/bai8i,?NTJz"><value name="img"><shadow type="screen_image_picker" id="RN?sI1x3aTsji/NXKb^9"><field name="img">img`
-2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
-2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
-2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
-2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
-2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
-2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
-2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
-2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
-2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
-2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
-2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
-2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
-2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
-2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
-2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
-2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
-`</field><data>{"commentRefs":[],"fieldData":{"img":null}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="5r?(*:o?5%TN2t]Bp=hx"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="moving_move" id="6jb6d{(EKZcf]t4]RoB}"><value name="mySprite"><block type="variables_get" id="jmg#AB4#2Kl3rJQ[U!Z{"><field name="VAR" id="uF=R/2YcZ1Md=bNiI{ib">mySprite</field></block></value><value name="n"><shadow type="math_number" id="|pwrreX{JzwMN0.Oz%WP"><field name="NUM">10</field></shadow></value><value name="t"><shadow type="timePicker" id="464,8Nj]aXx:tA98BMEz"><field name="ms">1000</field></shadow></value><next><block type="moving_move2" id="5gQwbSF03Ve]o0!GgGMc"><value name="mySprite"><block type="variables_get" id="wl=4!tBZq-H%A0EJE4IN"><field name="VAR" id="uF=R/2YcZ1Md=bNiI{ib">mySprite</field></block></value><value name="n"><shadow type="math_number" id="#`hk(u)rFcN]_r@gX_[)"><field name="NUM">20</field></shadow></value><value name="t"><shadow type="timePicker" id="[An(^Dg2+3lA:84:JclV"><field name="ms">500</field></shadow></value></block></next></block></next></block></statement></block><block type="keyonevent" id="!w6BJ(Ibs+tGSm!oJGNT" x="111" y="370"><field name="button">controller.A</field><field name="event">ControllerButtonEvent.Pressed</field><statement name="HANDLER"><block type="moving_movestop" id="/sr+uA8EXylHEyn-z{MI"><value name="mySprite"><block type="variables_get" id="W9ohZ%5r|cucp}$*!Q6K"><field name="VAR" id="uF=R/2YcZ1Md=bNiI{ib">mySprite</field></block></value></block></statement></block></xml>
+<xml xmlns="https://developers.google.com/blockly/xml"><variables></variables><block type="pxt-on-start" id="xRRgvHNlG#rZ^u`HECiY" x="0" y="0"></block></xml>
