@@ -69,12 +69,11 @@ namespace moving {
     //%group="Stop Moving"
     export function movestop(mySprite: Sprite): void {
         let index = MOVE.indexOf(mySprite)
-        forever(function() {
-        if (MOVE[index]=== mySprite) {
-        MOVE[index].vx = 0
-        MOVE[index].vy = 0
+        if (index > -1) {
+            MOVE.splice(index, 1)
         }
-        })
-        MOVE.splice(index, 1)
+        mySprite.vx = 0
+        mySprite.vy = 0
     }
+
 }
