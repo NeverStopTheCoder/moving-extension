@@ -2,9 +2,7 @@
     "name": "moving extension",
     "description": "",
     "dependencies": {
-        "device": "*",
-        "Timers": "github:microsoft/arcade-timers#v1.1.0",
-        "arcade-text": "github:microsoft/arcade-text#v1.3.0"
+        "device": "*"
     },
     "files": [
         "main.blocks",
