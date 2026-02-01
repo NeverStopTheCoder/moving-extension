@@ -12,6 +12,7 @@
 //% weight=75 color=#48A860 icon=""
 //%block="Moving"
 namespace moving {
+    let MOVE: Sprite[] = []
     /**
      * TODO: describe your function here
      * @param n describe parameter here, eg: 5
@@ -24,11 +25,14 @@ namespace moving {
     //% t.shadow=timePicker
     //%group="Horizontal"
     export function move(mySprite: Sprite,n: number,t: number): void {
+        MOVE.push(mySprite)
         forever(function () {
+            if (MOVE.indexOf(mySprite) > -1) {
             mySprite.vx = -n
             pause(t)
             mySprite.vx = n
             pause(t)
+            }
         })
 
     }
@@ -45,11 +49,14 @@ namespace moving {
     //% t.shadow=timePicker
     //%group="Vertical"
     export function move2(mySprite: Sprite, n: number, t: number): void {
+        MOVE.push(mySprite)
         forever(function () {
+            if (MOVE.indexOf(mySprite) > -1) {
             mySprite.vy = -n
             pause(t)
             mySprite.vy = n
             pause(t)
+        }
         })
     }
     /**
@@ -64,9 +71,7 @@ namespace moving {
     //% t.shadow=timePicker
     //%group="Stop Moving"
     export function movestop(mySprite: Sprite): void {
-        forever(function () {
-            mySprite.vy = 0
-            mySprite.vx = 0
-        })
+        let index = MOVE.indexOf(mySprite)
+       MOVE.splice(index,1)
     }
 }
