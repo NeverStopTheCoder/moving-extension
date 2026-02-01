@@ -73,8 +73,10 @@ namespace moving {
     export function movestop(mySprite: Sprite): void {
         let index = MOVE.indexOf(mySprite)
         forever(function() {
+        if (MOVE[index]=== mySprite) {
         MOVE[index].vx = 0
         MOVE[index].vy = 0
+        }
         })
         MOVE.splice(index, 1)
     }
