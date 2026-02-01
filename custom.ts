@@ -24,7 +24,7 @@ namespace moving {
     //% block="Move $mySprite Left and right With Speed $n and wait time $t"
     //% t.shadow=timePicker
     //%group="Horizontal"
-    export function move(mySprite: Sprite,n: number,t: number): void {
+    export function move(mySprite: Sprite,n: number,t: number) {
         MOVE.push(mySprite)
         forever(function () {
             if (MOVE.indexOf(mySprite) > -1) {
@@ -48,7 +48,7 @@ namespace moving {
     //% block="Move $mySprite Up and down With Speed $n and wait time $t"
     //% t.shadow=timePicker
     //%group="Vertical"
-    export function move2(mySprite: Sprite, n: number, t: number): void {
+    export function move2(mySprite: Sprite, n: number, t: number) {
         MOVE.push(mySprite)
         forever(function () {
             if (MOVE.indexOf(mySprite) > -1) {
@@ -72,6 +72,10 @@ namespace moving {
     //%group="Stop Moving"
     export function movestop(mySprite: Sprite): void {
         let index = MOVE.indexOf(mySprite)
-       MOVE.splice(index,1)
+        forever(function() {
+        MOVE[index].vx = 0
+        MOVE[index].vy = 0
+        })
+        MOVE.splice(index, 1)
     }
 }
