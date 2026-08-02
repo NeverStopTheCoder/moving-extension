@@ -18,15 +18,18 @@ namespace moving {
      */
     //% mySprite.shadow=variables_get
     //% mySprite.defl=mySprite
-    //% block="Move $mySprite Left and right With Speed $n and wait time $t"
+    //% block="Move $mySprite Left and right With Speed $n and wait time $t||and with wait in between $n2"
     //% t.shadow=timePicker
     //%group="Horizontal"
-    export function move(mySprite: Sprite,n: number,t: number) {
+    export function move(mySprite: Sprite,n: number,t: number, n2?: number) {
         MOVE.push(mySprite)
         forever(function () {
             if (MOVE.indexOf(mySprite) > -1) {
             mySprite.vx = -n
             pause(t)
+            if (n2 != undefined) {
+                pause(n2)
+            }
             mySprite.vx = n
             pause(t)
             }
@@ -42,15 +45,18 @@ namespace moving {
    */
     //% mySprite.shadow=variables_get
     //% mySprite.defl=mySprite
-    //% block="Move $mySprite Up and down With Speed $n and wait time $t"
+    //% block="Move $mySprite Up and down With Speed $n and wait time $t||and with wait in between $n2"
     //% t.shadow=timePicker
     //%group="Vertical"
-    export function move2(mySprite: Sprite, n: number, t: number) {
+    export function move2(mySprite: Sprite, n: number, t: number, n2?: number) {
         MOVE.push(mySprite)
         forever(function () {
             if (MOVE.indexOf(mySprite) > -1) {
             mySprite.vy = -n
             pause(t)
+            if (n2 != undefined) {
+                pause(n2)
+            }
             mySprite.vy = n
             pause(t)
         }
@@ -75,5 +81,4 @@ namespace moving {
         mySprite.vx = 0
         mySprite.vy = 0
     }
-
 }
